@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Lat7 extends StatefulWidget {
@@ -26,9 +27,10 @@ class _Lat7State extends State<Lat7> {
             constraints: BoxConstraints.expand(),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Icon(
-                Icons.apple_rounded,
-                size: 100,
+              SvgPicture.asset(
+                'assets/google.svg',
+                height: 70,
+                width: 70,
               ),
               Text('Hello,',
                   style: GoogleFonts.montserrat(
